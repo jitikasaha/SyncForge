@@ -224,3 +224,19 @@ body {
 
   text-align: center;
 }
+.room-input {
+  padding: 14px;
+  width: 250px;
+
+  margin-right: 15px;
+
+  border-radius: 12px;
+
+  border: 1px solid #333;
+
+  background: #121212;
+
+  color: white;
+
+  outline: none;
+}

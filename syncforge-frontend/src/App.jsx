@@ -1,20 +1,29 @@
 import "./App.css";
 
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Workspace from "./pages/Workspace";
+
 function App() {
   return (
-    <div className="container">
-      <h1 className="title">SyncForge</h1>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
 
-      <p className="subtitle">
-        Real-Time Collaborative Development Platform
-      </p>
+        <Route path="/login" element={<Login />} />
 
-      <div className="buttons">
-        <button className="btn">Create Room</button>
-
-        <button className="btn">Join Room</button>
-      </div>
-    </div>
+        <Route
+          path="/workspace"
+          element={<Workspace />}
+        />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

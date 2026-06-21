@@ -209,3 +209,18 @@ body {
     display: none;
   }
 }
+.room-card {
+  margin-top: 30px;
+
+  background: #121212;
+
+  border: 1px solid #8b5cf6;
+
+  padding: 25px;
+
+  border-radius: 16px;
+
+  min-width: 320px;
+
+  text-align: center;
+}
